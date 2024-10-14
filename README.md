@@ -8,3 +8,4 @@ machine learning to train sets derived from high-resolution images representing 
 [Kamonyi_practical mapping11g.pdf](https://github.com/user-attachments/files/17370076/Kamonyi_practical.mapping11g.pdf)
 
 [Illustration_of_resolution mismatch4.pdf](https://github.com/user-attachments/files/17370077/Illustration_of_resolution.mismatch4.pdf)
+![image](https://github.com/user-attachments/assets/d46e8cab-febe-413e-a3aa-83551cf63216)
