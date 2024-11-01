@@ -5,12 +5,3 @@ machine learning to train sets derived from high-resolution images representing 
 
 
 ![Uploading C2FNet2_page-0001.jpg…]()
-
-
-[C2FNet_convs_componentsPresentation1.pdf](https://github.com/user-attachments/files/17370037/C2FNet_convs_componentsPresentation1.pdf)
-
-[General_correlation_heatmaps.pdf](https://github.com/user-attachments/files/17370045/General_correlation_heatmaps.pdf)
-
-[Kamonyi_practical mapping11g.pdf](https://github.com/user-attachments/files/17370076/Kamonyi_practical.mapping11g.pdf)
-
-[Illustration_of_resolution mismatch4.pdf](https://github.com/user-attachments/files/17370077/Illustration_of_resolution.mismatch4.pdf)
