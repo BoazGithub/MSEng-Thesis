@@ -67,57 +67,8 @@ The *sKwanda_V1_d* dataset is organized into training, validation, and testing s
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-# Create a figure and axis
-fig, ax = plt.subplots(figsize=(10, 8))
 
 # Define the dataset structure
-dataset_structure = {
-    'sKwanda_V1_d': {
-        'train': {
-            'Images': 'Land cover images for training',
-            'GT': 'Ground truth labels for training'
-        },
-        'val': {
-            'Images': 'Land cover images for validation',
-            'GT': 'Ground truth labels for validation'
-        },
-        'test': {
-            'Images': 'Land cover images for testing',
-            'GT': 'Ground truth labels for testing'
-        }
-    }
-}
-
-# Define positions for the blocks
-y_pos = 0
-spacing = 0.15
-
-# Create blocks for the dataset structure
-for section, contents in dataset_structure.items():
-    ax.text(0.5, y_pos, section, fontsize=14, weight='bold', ha='center')
-    y_pos -= spacing
-    for key, description in contents.items():
-        ax.text(0.5, y_pos, f"{key}:", fontsize=12, weight='bold', ha='center')
-        y_pos -= spacing
-        ax.text(0.5, y_pos, description, fontsize=12, ha='center')
-        y_pos -= spacing
-        ax.text(0.5, y_pos, "- <region><year><XY>.png", fontsize=12, ha='center')
-        ax.text(0.5, y_pos, "- ...", fontsize=12, ha='center')
-        ax.text(0.5, y_pos, "- <region><year><XY>.png", fontsize=12, ha='center')
-        y_pos -= spacing * 2  # extra spacing for clarity
-
-# Hide axes
-ax.axis('off')
-
-# Set title
-plt.title("sKwanda_V1_d Dataset Structure", fontsize=16, weight='bold')
-
-# Show the figure
-plt.tight_layout()
-plt.show()
-
-
-
 🚚 Datasets
 
 
