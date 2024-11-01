@@ -15,6 +15,9 @@ machine learning to train sets derived from high-resolution images representing 
 The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorporates three key components: Edge Resolution Refinement Backbones (ERRB) for stable feature extraction, Unsupervised Dynamic Shuffle and Diagonal Annotation (UDSDA) for confident area selection and probability assignment based close spatial patterns within multiscale features, and a Contrasting Self-Supervised Loss Function (C2F-Loss) utilizing cosine similarity to guide model learning. The contributions of this study can be summarized as: a) improving the accuracy and robustness of land cover mapping, particularly in regions with complex features, achieving an overall accuracy of 80.01% and a kappa coefficient of 0.7567; and b) maximizing the utilization of available data sources for advanced high-resolution land cover mapping. 
 ![image](https://github.com/user-attachments/assets/3e163c08-adcd-47ed-9384-504fdadf38f7)
 
+C2FNetwork components:
+1. Unsupervised Dynamic Shuffle and Diagonal Annotation
+   
 ![Unsupervised Dynamic Shuffle and Diagonal Annotation_design2_page-0001](https://github.com/user-attachments/assets/d5fcada2-69cc-4545-8aa4-332b9c762795)
 
 
