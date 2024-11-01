@@ -22,7 +22,8 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 ![image](https://github.com/user-attachments/assets/8b8f1148-e7b7-46ad-bf9b-31f2b3340ebd)
 
 🔭 Baseline 
-
+📖 📖 📖
+📖 📖 📖
 💬 Dataset Preparation
 
 
@@ -32,13 +33,16 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 
 
 
-Contact Information
+Contact Information:
+
 If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
 
-License
+License: 
+
 The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
 
-Acknowledgment
+Acknowledgment:
+
 Appreciate the work from the following repositories:
 
 Planetary Science group at Wuhan University
