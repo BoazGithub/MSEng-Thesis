@@ -64,6 +64,9 @@ The sKwanda_V1_d dataset includes 256 × 256 pixel image patches collected from 
 The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
 
 ## Dataset Structure
+# sKwanda_V1_d Dataset
+
+The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
 
 ```yaml
 sKwanda_V1_d:
@@ -96,6 +99,7 @@ sKwanda_V1_d:
       - <region><year><XY>.png
       - ...
       - <region><year><XY>.png
+
 
 
 🚚 Datasets
