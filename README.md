@@ -3,6 +3,5 @@ This research focused on a weak supervision strategy for deep learning aimed at 
 using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was how to overcome the barriers of spatial resolution mismatch between pairs of
 machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and heterogeneity in landforms.
 
+1. ![image](https://github.com/user-attachments/assets/4ad9f368-ea95-4a10-ad2f-8faa4cd2bd62)
 
-![Uploading C2FNet2_page-0001.jpg…]()
-![Uploading C2FNet2_page-0001.jpg…]()
