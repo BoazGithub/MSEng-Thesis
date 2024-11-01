@@ -59,7 +59,11 @@ C2FNetwork components:
 👉 Data Structure
 ### Dataset Overview
 The sKwanda_V1_d dataset includes 256 × 256 pixel image patches collected from various regions. It is organized into three subsets: train, val, and test, each containing images and their corresponding ground truth labels. This dataset supports tasks such as supervised land cover classification and semantic segmentation.
-## sKwanda_V1_d Dataset Structure
+# sKwanda_V1_d Dataset
+
+The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
+
+## Dataset Structure
 
 ```yaml
 sKwanda_V1_d:
@@ -94,7 +98,6 @@ sKwanda_V1_d:
       - <region><year><XY>.png
 
 
-## sKwanda_V1_d Dataset Structure
 🚚 Datasets
 
 
