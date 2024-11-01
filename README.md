@@ -66,6 +66,13 @@ The *sKwanda_V1_d* dataset is organized into training, validation, and testing s
 ## Dataset Structure
 # sKwanda_V1_d Dataset
 
+
+
+
+markdown
+Copy code
+# sKwanda_V1_d Dataset
+
 The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
 
 ```yaml
@@ -99,6 +106,35 @@ sKwanda_V1_d:
       - <region><year><XY>.png
       - ...
       - <region><year><XY>.png
+🚚 Datasets
+ sKwanda_V1_dataset_Bugesera
+Contact Information
+If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
+
+License
+The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
+
+Acknowledgment
+Appreciate the work from the following repositories:
+
+Planetary Science group at the State Key Laboratory of Information Engineering in Surveying, Mapping, and Remote Sensing of Wuhan University
+L2HNet
+Related Resources
+L2HNet dataset
+Sentinel2-Hub
+ESRI
+vbnet
+Copy code
+
+### Key Points:
+- **Code Block**: The dataset structure is enclosed in triple backticks (```) and labeled as `yaml` to format it correctly.
+- **Sections**: Each section (like Datasets, Contact Information, etc.) is clearly defined with appropriate headings.
+- **Links**: Hyperlinks are formatted properly without disrupting the dataset structure.
+- **Email**: The email is clickable using the `mailto:` format for convenience.
+
+This structure maintains clarity and organization, ensuring that your dataset information I
+
+
 
 
 
