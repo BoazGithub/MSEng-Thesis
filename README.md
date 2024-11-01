@@ -2,13 +2,26 @@
 This research focused on a weak supervision strategy for deep learning aimed at enhancing high-resolution (sub-meter) land cover from historical pseudo (noise) labels. The study involved developing a deep learning architecture that could be supervised
 using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was how to overcome the barriers of spatial resolution mismatch between pairs of
 machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and heterogeneity in landforms.
-# Dataset
 
-- [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
+## Description
+
+
+| Image Ref. |      Site     | Image Acquisition Date  |   GT Date   |
+| ---------- | ------------- | ----------- | ------------ | 
+|   Img (1)  |   The City of Kigali  |  04-03-2023 |  27-06-2023 |
+|   Img (2)  |      Bugesera        |  22-07-2023  |  25-08-2023  |  
+|   Img (3)  |   Oklahoma State    |  26-08-2022  |  03-80-2022  |  
+
 
 # Requirements 
 
 
+[![Python 3.7+](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-376/) 
+[![Pytorch 1.7.1](https://img.shields.io/badge/Pytorch-1.7.1-blue.svg)](https://pytorch.org/get-started/previous-versions/)
+[![torchvision 0.8.2](https://img.shields.io/badge/torchvision-0.8.2-blue.svg)](https://pypi.org/project/torchvision/0.8.2/)
+[![Opencv 4.5.5](https://img.shields.io/badge/Opencv-4.5.5-blue.svg)](https://opencv.org/opencv-4-5-5/)
+[![CUDA Toolkit 10.1](https://img.shields.io/badge/CUDA-10.1-blue.svg)](https://developer.nvidia.com/cuda-10.1-download-archive-base)
+[![Wandb 0.13.10](https://img.shields.io/badge/Wandb-0.13.10-blue.svg)](https://pypi.org/project/wandb/)
 
 
 # C2FNet Architecture
@@ -32,15 +45,10 @@ C2FNetwork components:
 ### 🔭 Baseline:
 
 📖 📖 📖 
-- :open_book:	:open_book:	 :open_book: DTCDSCN [[here](https://ieeexplore.ieee.org/abstract/document/9311793)]
+- :open_book:	:open_book:	 :open_book: DTCDSCN [[here](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180)]
 - :open_book:	:open_book:	 :open_book: UNet [[here](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIV-4-W3-2020/215/2020/)]
-- :open_book:	:open_book:	 :open_book: FC-Siam [[here](https://ieeexplore.ieee.org/abstract/document/8451652)]
-- :open_book:	:open_book:	 :open_book: SNUNet–ECAM [[here](https://ieeexplore.ieee.org/abstract/document/9355573)]
-- :open_book:	:open_book:	 :open_book: Siam-Nested-UNet [[here](https://dl.acm.org/doi/abs/10.1145/3437802.3437810)]
 - :open_book:	:open_book:	 :open_book: ResNet50-IMP [[here](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)]
 - :open_book:	:open_book:	 :open_book: ResNet50-RSP [[here](https://ieeexplore.ieee.org/abstract/document/9782149)]
-- :open_book:	:open_book:	 :open_book: Swin–T-RSP [[here](https://ieeexplore.ieee.org/abstract/document/9782149)]
-- :open_book:	:open_book:	 :open_book: Swin-T-IMP [[here](https://ieeexplore.ieee.org/abstract/document/9736956)]
 - :open_book:	:open_book:	 :open_book: ViTAEv2 [[here](https://arxiv.org/pdf/2202.10108.pdf)]
 📖 📖 📖
 
@@ -48,58 +56,46 @@ C2FNetwork components:
 💬 Dataset Preparation
 
 
-👉 Data Structure
+👉 ## Data Structure
+### Dataset Overview
+The sKwanda_V1_d dataset includes 256 × 256 pixel image patches collected from various regions. It is organized into three subsets: train, val, and test, each containing images and their corresponding ground truth labels. This dataset supports tasks such as supervised land cover classification and semantic segmentation.
+
+sKwanda_V1_d:
+  train:
+    Images:                        # Land cover images for training
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
+    GT:                            # Ground truth labels for training
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
+
+  val:
+    Images:                        # Land cover images for validation
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
+    GT:                            # Ground truth labels for validation
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
+
+  test:
+    Images:                        # Land cover images for testing
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
+    GT:                            # Ground truth labels for testing
+      - <region><year><XY>.png
+      - ...
+      - <region><year><XY>.png
 
 
-
-```yaml
-For S1GFloods dataset, clip the images to 256 × 256 patches. Please, respect the following structure: 
-├————train/
-|      ├———Pre/                                  Images of Time 1 before the flood event
-            ├———<region><year><XY>.png
-            ...
-            ├———<region><year><XY>.png
-|      ├———Post/                                 Images of Time 2 after the flood event
-            ├———<region><year><XY>.png
-            ...
-            ├———<region><year><XY>.png            
-|      ├———GT/                                   Ground truth labels
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|
-├————val/
-|      ├———Pre/  
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|      ├———Post/
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|      ├———GT/
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|
-├————test/
-|      ├———Pre/  
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|      ├———Post/
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-|      ├———GT/
-            ├———<region><year><XY>.png 
-            ...
-            ├———<region><year><XY>.png 
-```
+🚚 ### Datasets
 
 
-🚚 Datasets
-
+- [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
 
 
 Contact Information:
