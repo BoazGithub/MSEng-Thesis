@@ -64,77 +64,57 @@ The sKwanda_V1_d dataset includes 256 × 256 pixel image patches collected from 
 The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
 
 ## Dataset Structure
-# sKwanda_V1_d Dataset
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 
+# Create a figure and axis
+fig, ax = plt.subplots(figsize=(10, 8))
 
+# Define the dataset structure
+dataset_structure = {
+    'sKwanda_V1_d': {
+        'train': {
+            'Images': 'Land cover images for training',
+            'GT': 'Ground truth labels for training'
+        },
+        'val': {
+            'Images': 'Land cover images for validation',
+            'GT': 'Ground truth labels for validation'
+        },
+        'test': {
+            'Images': 'Land cover images for testing',
+            'GT': 'Ground truth labels for testing'
+        }
+    }
+}
 
+# Define positions for the blocks
+y_pos = 0
+spacing = 0.15
 
-markdown
-Copy code
-# sKwanda_V1_d Dataset
+# Create blocks for the dataset structure
+for section, contents in dataset_structure.items():
+    ax.text(0.5, y_pos, section, fontsize=14, weight='bold', ha='center')
+    y_pos -= spacing
+    for key, description in contents.items():
+        ax.text(0.5, y_pos, f"{key}:", fontsize=12, weight='bold', ha='center')
+        y_pos -= spacing
+        ax.text(0.5, y_pos, description, fontsize=12, ha='center')
+        y_pos -= spacing
+        ax.text(0.5, y_pos, "- <region><year><XY>.png", fontsize=12, ha='center')
+        ax.text(0.5, y_pos, "- ...", fontsize=12, ha='center')
+        ax.text(0.5, y_pos, "- <region><year><XY>.png", fontsize=12, ha='center')
+        y_pos -= spacing * 2  # extra spacing for clarity
 
-The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
+# Hide axes
+ax.axis('off')
 
-```yaml
-sKwanda_V1_d:
-  train:
-    Images:                        # Land cover images for training
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
-    GT:                            # Ground truth labels for training
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
+# Set title
+plt.title("sKwanda_V1_d Dataset Structure", fontsize=16, weight='bold')
 
-  val:
-    Images:                        # Land cover images for validation
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
-    GT:                            # Ground truth labels for validation
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
-
-  test:
-    Images:                        # Land cover images for testing
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
-    GT:                            # Ground truth labels for testing
-      - <region><year><XY>.png
-      - ...
-      - <region><year><XY>.png
-🚚 Datasets
- sKwanda_V1_dataset_Bugesera
-Contact Information
-If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
-
-License
-The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
-
-Acknowledgment
-Appreciate the work from the following repositories:
-
-Planetary Science group at the State Key Laboratory of Information Engineering in Surveying, Mapping, and Remote Sensing of Wuhan University
-L2HNet
-Related Resources
-L2HNet dataset
-Sentinel2-Hub
-ESRI
-vbnet
-Copy code
-
-### Key Points:
-- **Code Block**: The dataset structure is enclosed in triple backticks (```) and labeled as `yaml` to format it correctly.
-- **Sections**: Each section (like Datasets, Contact Information, etc.) is clearly defined with appropriate headings.
-- **Links**: Hyperlinks are formatted properly without disrupting the dataset structure.
-- **Email**: The email is clickable using the `mailto:` format for convenience.
-
-This structure maintains clarity and organization, ensuring that your dataset information I
-
-
+# Show the figure
+plt.tight_layout()
+plt.show()
 
 
 
