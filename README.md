@@ -4,9 +4,10 @@ using unified noise or imbalanced datasets as a reasonable training set during t
 machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and heterogeneity in landforms.
 # Dataset
 
-
+- [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
 
 # Requirements 
+
 
 
 
@@ -28,9 +29,19 @@ C2FNetwork components:
 # Qualitative Results
 ![image](https://github.com/user-attachments/assets/8b8f1148-e7b7-46ad-bf9b-31f2b3340ebd)
 
-🔭 Baseline:
+### 🔭 Baseline:
 
-📖 📖 📖
+📖 📖 📖 
+- :open_book:	:open_book:	 :open_book: DTCDSCN [[here](https://ieeexplore.ieee.org/abstract/document/9311793)]
+- :open_book:	:open_book:	 :open_book: UNet [[here](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIV-4-W3-2020/215/2020/)]
+- :open_book:	:open_book:	 :open_book: FC-Siam [[here](https://ieeexplore.ieee.org/abstract/document/8451652)]
+- :open_book:	:open_book:	 :open_book: SNUNet–ECAM [[here](https://ieeexplore.ieee.org/abstract/document/9355573)]
+- :open_book:	:open_book:	 :open_book: Siam-Nested-UNet [[here](https://dl.acm.org/doi/abs/10.1145/3437802.3437810)]
+- :open_book:	:open_book:	 :open_book: ResNet50-IMP [[here](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)]
+- :open_book:	:open_book:	 :open_book: ResNet50-RSP [[here](https://ieeexplore.ieee.org/abstract/document/9782149)]
+- :open_book:	:open_book:	 :open_book: Swin–T-RSP [[here](https://ieeexplore.ieee.org/abstract/document/9782149)]
+- :open_book:	:open_book:	 :open_book: Swin-T-IMP [[here](https://ieeexplore.ieee.org/abstract/document/9736956)]
+- :open_book:	:open_book:	 :open_book: ViTAEv2 [[here](https://arxiv.org/pdf/2202.10108.pdf)]
 📖 📖 📖
 
 
@@ -38,6 +49,54 @@ C2FNetwork components:
 
 
 👉 Data Structure
+
+
+
+```yaml
+For S1GFloods dataset, clip the images to 256 × 256 patches. Please, respect the following structure: 
+├————train/
+|      ├———Pre/                                  Images of Time 1 before the flood event
+            ├———<region><year><XY>.png
+            ...
+            ├———<region><year><XY>.png
+|      ├———Post/                                 Images of Time 2 after the flood event
+            ├———<region><year><XY>.png
+            ...
+            ├———<region><year><XY>.png            
+|      ├———GT/                                   Ground truth labels
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|
+├————val/
+|      ├———Pre/  
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|      ├———Post/
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|      ├———GT/
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|
+├————test/
+|      ├———Pre/  
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|      ├———Post/
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+|      ├———GT/
+            ├———<region><year><XY>.png 
+            ...
+            ├———<region><year><XY>.png 
+```
+
 
 🚚 Datasets
 
