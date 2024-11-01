@@ -93,3 +93,41 @@ sKwanda_V1_d:
       - ...
       - <region><year><XY>.png
 
+
+
+🚚 Datasets
+
+
+- [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
+
+
+Contact Information:
+
+
+If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
+
+License: 
+
+
+The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
+
+Acknowledgment:
+
+
+Appreciate the work from the following repositories:
+
+
+Planetary Science group at the State key laboratory of information engineering in surveying, mapping and remote sensing of the Wuhan University 
+
+L2HNet
+
+Related resources:
+
+
+L2HNet dataset
+
+
+Sentine2-Hub
+
+
+ESRI 
