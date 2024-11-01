@@ -16,8 +16,10 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 
 # Quantitative Results
 
+![image](https://github.com/user-attachments/assets/64e7d529-28c5-49df-9639-8c562fcab3f2)
 
 # Qualitative Results
+![image](https://github.com/user-attachments/assets/8b8f1148-e7b7-46ad-bf9b-31f2b3340ebd)
 
 🔭 Baseline 
 
