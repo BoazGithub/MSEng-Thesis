@@ -59,33 +59,33 @@ C2FNetwork components:
 👉 Data Structure
 ### Dataset Overview
 The sKwanda_V1_d dataset includes 256 × 256 pixel image patches collected from various regions. It is organized into three subsets: train, val, and test, each containing images and their corresponding ground truth labels. This dataset supports tasks such as supervised land cover classification and semantic segmentation.
-# sKwanda_V1_d Dataset
+### sKwanda_V1_d Dataset
 
 The *sKwanda_V1_d* dataset is organized into training, validation, and testing sets, each containing images and ground truth (GT) labels for land cover mapping. The structure is as follows:
 
-## Dataset Structure
+### Dataset Structure
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 
-# Define the dataset structure
+### Define the dataset structure
 🚚 Datasets
 
 
 - [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
 
 
-Contact Information:
+###  Contact Information:
 
 
 If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
 
-License: 
+### License: 
 
 
 The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
 
-Acknowledgment:
+### Acknowledgment:
 
 
 Appreciate the work from the following repositories:
@@ -93,15 +93,15 @@ Appreciate the work from the following repositories:
 
 Planetary Science group at the State key laboratory of information engineering in surveying, mapping and remote sensing of the Wuhan University 
 
-L2HNet
+1. L2HNet
 
-Related resources:
-
-
-L2HNet dataset
+2. Related resources:
 
 
-Sentine2-Hub
+3. L2HNet dataset
 
 
-ESRI 
+4. Sentine2-Hub
+
+
+5. ESRI 
