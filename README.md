@@ -4,6 +4,7 @@ using unified noise or imbalanced datasets as a reasonable training set during t
 machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and heterogeneity in landforms.
 
 # C2FNet Architecture
+![image](https://github.com/user-attachments/assets/3e163c08-adcd-47ed-9384-504fdadf38f7)
 
-1. ![image](https://github.com/user-attachments/assets/4ad9f368-ea95-4a10-ad2f-8faa4cd2bd62)
+
 
