@@ -21,7 +21,8 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 # Qualitative Results
 ![image](https://github.com/user-attachments/assets/8b8f1148-e7b7-46ad-bf9b-31f2b3340ebd)
 
-🔭 Baseline 
+🔭 Baseline:
+
 📖 📖 📖
 📖 📖 📖
 
