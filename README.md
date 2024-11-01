@@ -33,7 +33,7 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 
 
 Contact Information
-If you have any questions or would like to collaborate, please reach out to me at tamersaleh@whu.edu.cn or feel free to make issues.
+If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
 
 License
 The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
@@ -41,13 +41,12 @@ The code and datasets are released for non-commercial and research purposes only
 Acknowledgment
 Appreciate the work from the following repositories:
 
-wenhwu/awesome-remote-sensing-change-detection
-SNUNet-CD
-BIT-CD
+Planetary Science group at Wuhan University
+L2HNet
 Related resources
-ASF-Dataset
-Sentinel-Hub
-SNAP Toolbox
+L2HNet dataset
+Sentine2-Hub
+ESRI 
 
 
 
