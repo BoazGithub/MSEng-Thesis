@@ -38,19 +38,27 @@ The study introduced the Coarse-to-Fine Network (C2FNet) framework, which incorp
 
 Contact Information:
 
+
 If you have any questions or would like to collaborate, please reach out to me at aiboaz1896@gmail.com or feel free to make issues.
 
 License: 
+
 
 The code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
 
 Acknowledgment:
 
+
 Appreciate the work from the following repositories:
 
-Planetary Science group at Wuhan University
+
+Planetary Science group at the State key laboratory of information engineering in surveying, mapping and remote sensing of the Wuhan University 
+
 L2HNet
-Related resources
+
+Related resources:
+
+
 L2HNet dataset
 Sentine2-Hub
 ESRI 
