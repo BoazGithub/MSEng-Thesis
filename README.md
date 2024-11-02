@@ -32,7 +32,7 @@ C2FNetwork components:
    
 ![Unsupervised Dynamic Shuffle and Diagonal Annotation_design2_page-0001](https://github.com/user-attachments/assets/d5fcada2-69cc-4545-8aa4-332b9c762795)
 
-### Training C2F Network
+## Training C2F Network
 
 #### Training Instructions for C2FNet: High-Resolution Land Cover Enhancement from Noise Labels
 
