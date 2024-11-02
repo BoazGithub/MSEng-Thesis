@@ -107,7 +107,9 @@ import matplotlib.patches as mpatches
 
 ### Define the dataset structure
 🚚 Datasets
-
+📖 📖 📖 
+- :open_book:	:open_book:	 :open_book: DTCDSCN [[here](https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link)]
+📖 📖 📖
 
 - [x] [sKwanda)V1_dataset_Bugesera][Google Drive Link]([https://drive.google.com/file/d/1W-gnUU-AaYbJ8KMdfnbrI7ySHkiKjOvo/view?usp=drive_link](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)
 
