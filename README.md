@@ -1,5 +1,5 @@
  # CROSS-PROBABILISTIC WEAK SUPERVISION LEARNING FOR HIGH-RESOLUTION LAND COVER ENHANCEMENT 
-This research focused on a weak supervision strategy for deep learning to enhance high-resolution (sub-meter) land cover from historical pseudo (noise) labels. The study involved developing a deep learning architecture that could be supervised using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was overcoming the barriers of spatial resolution mismatch between pairs of machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and landform heterogeneity.
+This research focused on a weak supervision strategy for deep learning to enhance high-resolution (sub-meter) land cover from historical pseudo (noise) labels. The study involved developing a deep learning architecture that could be supervised using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was overcoming the barriers of spatial resolution mismatch between pairs of machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and landform heterogeneity. Download Data [[here](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)] and C2FNet-Model [[here](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)]
 
 ## Description
 
@@ -107,7 +107,7 @@ import matplotlib.patches as mpatches
 
 ### Define the dataset structure
 🚚 Datasets
-📖 📖 📖 
+
 - :open_book:	:open_book:	 :open_book: sKwanda_V1)Bugesera [[here](https://drive.google.com/file/d/1X_Fz7LQIeix3rV3K29FBfKiU1WMdROe-/view?usp=drive_link)]
 📖 📖 📖
 
