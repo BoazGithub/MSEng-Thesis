@@ -1,7 +1,5 @@
  # CROSS-PROBABILISTIC WEAK SUPERVISION LEARNING FOR HIGH-RESOLUTION LAND COVER ENHANCEMENT 
-This research focused on a weak supervision strategy for deep learning aimed at enhancing high-resolution (sub-meter) land cover from historical pseudo (noise) labels. The study involved developing a deep learning architecture that could be supervised
-using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was how to overcome the barriers of spatial resolution mismatch between pairs of
-machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and heterogeneity in landforms.
+This research focused on a weak supervision strategy for deep learning to enhance high-resolution (sub-meter) land cover from historical pseudo (noise) labels. The study involved developing a deep learning architecture that could be supervised using unified noise or imbalanced datasets as a reasonable training set during the knowledge acquisition phase. The main concern was overcoming the barriers of spatial resolution mismatch between pairs of machine learning to train sets derived from high-resolution images representing complex urban features and rural image features, regardless of photogrammetric and landform heterogeneity.
 
 ## Description
 
@@ -36,54 +34,43 @@ C2FNetwork components:
 
 ### Training C2F Network
 
-Training Instructions for C2FNet: High-Resolution Land Cover Enhancement from Noise Labels
-Dataset and Project Preparation
+#### Training Instructions for C2FNet: High-Resolution Land Cover Enhancement from Noise Labels
 
-Set up the project directory by replacing 'YOUR_PROJECT_ROOT' in ./scripts/train_c2f.sh with the path to your C2FNet project.
-Download and unzip the training dataset for C2FNet, then replace 'YOUR_PATH_FOR_C2F_TRAIN_DATA' in ./scripts/train_c2f.sh with the directory where the training data is stored.
-Download and extract the test dataset for C2FNet, updating 'YOUR_PATH_FOR_C2F_TEST_DATA' in both ./scripts/evaluate_c2f_base.sh and ./scripts/evaluate_c2f.sh. The data lists (train.txt, val.txt, all_5shot_seed123.txt for support set, and test.txt) are already configured according to the dataset requirements, so no modifications are necessary.
+##### Dataset and Project Preparation
+
+1. Set up the project directory by replacing 'YOUR_PROJECT_ROOT' in ./scripts/train_c2f.sh with the path to your C2FNet project.
+2. Download and unzip the training dataset for C2FNet, then replace 'YOUR_PATH_FOR_C2F_TRAIN_DATA' in ./scripts/train_c2f.sh with the directory where the training data is stored.
+3. Download and extract the test dataset for C2FNet, updating 'YOUR_PATH_FOR_C2F_TEST_DATA' in both ./scripts/evaluate_c2f_base.sh and ./scripts/evaluate_c2f.sh. The data lists (train.txt, val.txt, all_5shot_seed123.txt for support set, and test.txt) are already configured according to the dataset requirements, so no modifications are necessary.
 Base Model Training and Evaluation
 
-Begin training the base C2FNet model by running:
-bash
-Copy code
-CUDA_VISIBLE_DEVICES=0 bash ./scripts/train_c2f.sh
-The trained model and log files will be saved in ./model_saved_base.
-Evaluate the trained base model by executing:
-bash
-Copy code
-CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_c2f_base.sh
-Update 'RESTORE_PATH' with the path to your saved checkpoint. Output prediction maps and log files will be stored in ./output.
-Updating for Novel Classes and Evaluation
+###### Begin training the base C2FNet model by running:
+4. CUDA_VISIBLE_DEVICES=0 bash ./scripts/train_c2f.sh
+5. The trained model and log files will be saved in ./model_saved_base.
+6. Evaluate the trained base model by executing:
+7. CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_c2f_base.sh
+8. Update 'RESTORE_PATH' with the path to your saved checkpoint. Output prediction maps and log files will be stored in ./output.
+9. Updating for Novel Classes and Evaluation
 
-Generate new samples for novel classes by running:
-bash
-Copy code
-python gen_new_samples_for_new_class.py
-Store these samples in 'YOUR_PATH_OF_CUTMIX_SAMPLES', then copy them to 'YOUR_PATH_FOR_C2F_TRAIN_DATA'. Append the new sample list to all_5shot_seed123.txt.
-Update the base model with novel class samples by executing:
-bash
-Copy code
-CUDA_VISIBLE_DEVICES=0 bash ./scripts/ft_c2f.sh
-Replace 'RESTORE_PATH' with your checkpoint path. The updated model and logs will be stored in ./model_saved_ft.
-To evaluate the updated model, run:
-bash
-Copy code
-CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_c2f_base.sh
-Use the correct 'RESTORE_PATH'. Outputs and logs will be saved in ./output.
-Output Transformation and Probability Map Fusion
+###### Generate new samples for novel classes by running:
+10. python gen_new_samples_for_new_class.py
+11. Store these samples in 'YOUR_PATH_OF_CUTMIX_SAMPLES', then copy them to 'YOUR_PATH_FOR_C2F_TRAIN_DATA'. Append the new sample list to all_5shot_seed123.txt.
+    
+###### Update the base model with novel class samples by executing:
+12. CUDA_VISIBLE_DEVICES=0 bash ./scripts/ft_c2f.sh
+13. Replace 'RESTORE_PATH' with your checkpoint path. The updated model and logs will be stored in ./model_saved_ft.
+    
+######  To evaluate the updated model, run:
+14. CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_c2f_base.sh
+15. Use the correct 'RESTORE_PATH'. Outputs and logs will be saved in ./output.
+16. Output Transformation and Probability Map Fusion
 
-To convert the output to the competition’s required format, run:
-bash
-Copy code
-python trans.py
-The transformed output will be saved in ./upload.
-(Optional) Fuse multiple probability outputs by running:
-bash
-Copy code
-python fusemat.py
-Replace 'PATH_OF_PROBABILITY_MAP_*' with your specific paths (generated in ./output/prob).
-
+###### To convert the output to the competition’s required format, run:
+17. python trans.py
+18. The transformed output will be saved in ./upload.
+    
+###### (Optional) Fuse multiple probability outputs by running:
+20. python fusemat.py
+21. Replace 'PATH_OF_PROBABILITY_MAP_*' with your specific paths (generated in ./output/prob).
 
 # Quantitative Results
 
