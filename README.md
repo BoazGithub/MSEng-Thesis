@@ -72,6 +72,11 @@ Base Model Training and Evaluation
 20. python fusemat.py
 21. Replace 'PATH_OF_PROBABILITY_MAP_*' with your specific paths (generated in ./output/prob).
 
+##### Tracking training progress:
+in both valuation and validation in a variety of metrics ranging from how our loss function is declining, Accuracy, F1-Score, Recall, and their validation
+![image](https://github.com/user-attachments/assets/316990c2-101f-4159-9397-22671d9b0863)
+
+
 # Quantitative Results
 
 ![image](https://github.com/user-attachments/assets/64e7d529-28c5-49df-9639-8c562fcab3f2)
