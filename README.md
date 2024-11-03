@@ -32,6 +32,10 @@ C2FNetwork components:
    
 ![Unsupervised Dynamic Shuffle and Diagonal Annotation_design2_page-0001](https://github.com/user-attachments/assets/d5fcada2-69cc-4545-8aa4-332b9c762795)
 
+### Self-supervised loss function
+This loss function encourages the model to learn feature representations that are closer to the weight vectors as sociated with the correct class labels, thereby improving the classification performance self-supervised loss function
+![C2F LossScreenshot 2024-07-03 101010](https://github.com/user-attachments/assets/cd933aa5-d425-4542-8767-44ad8c1594a1)
+
 ## Training C2F Network
 
 #### Training Instructions for C2FNet: High-Resolution Land Cover Enhancement from Noise Labels
